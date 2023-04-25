@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.descuento{
+    background-color: #1CD1B0;
+    color: black;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+.logo{
+    background-color: #00669F;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.nombre-t{
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.parte-negra p{
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.parte-negra{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seccion{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-right: 243px;
+    padding-bottom: 20px;
+    padding-left: 243px;
+}
+
+.principal{
+    background-color: #00669F;
+    color: white;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 49px;
+}
+
+h2{
+    color: #FBFFFD;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.seccion p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+/*.check{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio{
+    display: flex;
+    flex-direction: column;
+}
+
+#boton{
+    background-color: #1CD1B0;
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 23px;
+    align-items: center;
+}*/
+
+footer{
+    background-color: #00669F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    height: 61px;
+}
+/* Pseudoselectores y Pseudoelementos */
+
+button::before{
+border-color: yellow;
+}

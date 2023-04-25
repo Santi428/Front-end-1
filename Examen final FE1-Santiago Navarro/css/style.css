@@ -1,0 +1,328 @@
+
+*{
+box-sizing:border-box;
+
+margin: 0;
+padding: 0; 
+font-family: 'Roboto', sans-serif;
+}
+
+button{
+    background-color: #8B48BF;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 50px;
+    width: 134px;
+    height: 44px;
+}
+
+button:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+/*Estilos del header*/
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.barra-nav{
+    display: flex;
+}
+
+.barra-nav li{
+    padding: 28px;
+}
+
+.burguer{
+    display: none;
+}
+
+/*Fin estilos header*/
+/*Estilos main*/
+.foto-paddle{
+    display: flex;
+    padding-left: 180px;
+    padding-bottom: 95px;
+}
+
+.info-torneo{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 170px;
+}
+.info-torneo h2{
+    color: #232C50;
+    font-size: 50px;
+    font-weight: 500;
+}
+.info-torneo p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.diferencias{
+    background-color: #8B48BF;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.diferencias h3{
+    font-size: 36px;
+    font-weight: 700;
+    padding: 40px 100px 40px 220px;
+}
+
+.diferencias p{
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 220px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/*Parte con mucha info*/
+
+.grupo-grande{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.dos-art{
+    display: flex;
+}
+
+.flex-articulos{
+    display: flex;
+    width: 550px;
+    padding-bottom: 40px;
+}
+
+/*prueba de transition*/
+
+.flex-articulos:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+    background-color: rgb(247, 189, 182);
+    border-color: #1E1E26;
+    border-radius: 15px;
+}
+
+/*Fin pruebas*/
+
+.articulos{
+    display: flex;
+    flex-direction: column;
+    padding-left: 23px;
+    color: #B3B2B7;
+}
+
+#texto-art{
+    padding-top: 10px;
+    padding-bottom: 18px;
+    color: #323851;
+}
+/*Estilos tarjetas de los jugadores*/
+
+.section-jugadores{
+    padding-bottom: 180px;
+}
+
+.tarjetas{
+    display: flex;
+}
+
+section h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.jugadores{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 240px;
+    justify-content: space-evenly;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.jugadores img:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+}
+
+#izq{
+    padding-left: 71px;
+}
+
+#der{
+    padding-right: 71px;
+}
+
+#nombre-jugador{
+    font-size: 16px;
+    font-weight: 700;
+    color: #3F4868;
+}
+
+.boton-more{
+    position: relative;
+    left: 45%;
+    top: 50px;
+}
+
+.ultima-parte-main{
+    background-color: #8B48BF;
+    color: white;
+    height: 224px;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#boton-distinto{
+    background-color: white;
+    color: #8B48BF;
+    
+}
+
+/*Fin estilos main*/
+/*Estilos footer*/
+
+footer{
+    background-color: #1E1E26;
+    color: white;
+    height: 247px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos{
+    padding-left: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.iconos img{
+    padding-left: 13px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 53px;
+    padding-bottom: 66px;
+}
+
+footer ul li{
+    color: white;
+}
+
+form{
+    padding-right: 165px; 
+    padding-top: 56px;
+    padding-bottom: 43px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+input{
+    height: 44px;
+    width: 200px;
+    padding-right: 10px;
+    border-radius: 50px;
+
+}
+
+/*fin estilos footer*/
+
+/*Media queries*/
+/*Nora, comento esto para avisarte que hago la media en 765 porque 480 se rompe todo y no se porque. Intente solucionarlo, pero por el tiempo que me queda prefiero hacerlo asi, espero que no sea problema, desde ya gracias =)*/
+@media (max-width:765px){
+
+    nav{
+        display: none;
+    }
+
+    .boton-arriba{
+        display: none;
+    }
+
+    .burguer{
+        display: block;
+        height: 41px;
+    }
+
+    .foto-paddle{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .diferencias{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #3CDDF3;
+    }
+
+    .dos-art{
+        flex-direction: column;
+    }
+
+    #medio{
+        display: none;
+    }
+
+    #der{
+        display: none;
+    }
+
+    .ultima-parte-main{
+        background-color: #3CDDF3;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #boton-distinto{
+        background-color: #232C50;
+        color: white;
+    }
+
+    footer{
+        flex-direction: column-reverse;  
+        justify-content: space-evenly;
+        align-items: center;
+        height: 700px;
+    }
+
+    .logo-footer{
+        height: 50px;
+        width: 200px;
+    }
+
+    #copy{
+        display: none;
+    }
+}

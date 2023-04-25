@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Formularios</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      <!--el atributo for del label debe coincidir con el atributo id de los inputs-->
+      <!--el atributo name del input debe estar para que el valor introducido en ese input sea enviado-->
+      <header>
+
+      </header>
+
+      <main>
+      <div class="container">
+             
+            <form class="formulario" action="" method="">
+                  <!-- fieldset: permite organizar en grupos los campos de un formulario -->
+                  <fieldset>
+                        <!-- legend: asigna un título a un grupo de campos -->
+                        <legend>Datos de registro</legend>
+                        <div class="entrada">
+                              <label for="usuario">Usuario</label>
+                              <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+                        </div>
+                        <div class="entrada">
+                              <label for="pass">Contraseña</label>
+                              <input type="password" id="pass" name="pass" placeholder="Contraseña" required>
+                        </div>
+                  </fieldset>
+                  <fieldset>
+                        <legend>Datos personales</legend>
+                        <!--for debe coincidir con id-->
+                        <div class="entrada">
+                              <label for="nombre">Nombre</label>
+                              <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="entrada">
+                              <label for="apellido">Apellido</label>
+                              <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                        </div>
+                        <div class="entrada">
+                              <label for="fecha-nac">Fecha de nacimiento</label>
+                              <input type="date" id="fecha-nac"name="fecha-nac">
+                        </div>
+                        <div class="entrada">
+                              <label for="foto">Foto</label>
+                              <input type="file" id="foto" name="foto">
+                        </div>
+                        <div class="entrada">
+                              <label for="color">Color favorito</label>
+                              <input type="color" id="color" name="color">
+                        </div>
+                        <fieldset>
+                              <legend class="sub">Grupo etario</legend>
+                              <div class="entrada">
+                                    <!-- el valor que se va a enviar es el que se coloque en el atributo value -->
+                                    <!-- Para que solo uno se seleccione van a compartir el mismo nombre
+                                    y tendrán distinto id -->
+                                    <input type="radio" name="edad" id="menor30">
+                                    <label class="label-especial" for="menor30">Menor de 30</label>
+                                    <input type="radio" name="edad" id="30a60" checked>
+                                    <label class="label-especial" for="30a60">Entre 30 y 60</label>
+                                    <input type="radio" name="edad" id="mayor60">
+                                    <label class="label-especial" for="mayor60">Mayor de 60</label>
+                              </div>
+                        </fieldset>
+                        <fieldset>
+                              <legend class="sub">Pasatiempos</legend>
+                              <div class="entrada">
+                                    <input type="checkbox" id="series" name="series">
+                                    <label class="label-especial" for="series">Series</label>
+                                    <input type="checkbox" id="cine" name="cine">
+                                    <label class="label-especial" for="cine">Cine</label>
+                                    <input type="checkbox" id="lectura" name="lectura" checked>
+                                    <label class="label-especial" for="lectura">Lectura</label>
+                                    <input type="checkbox" id="deporte" name="deporte">
+                                    <label class="label-especial" for="deporte">Deporte</label>
+                                    <input type="checkbox" id="naturaleza" name="naturaleza">
+                                    <label class="label-especial" for="naturaleza">Naturaleza</label>
+                              </div>
+                        </fieldset>
+                  </fieldset>
+
+                  <fieldset>
+                        <legend>Datos de contacto</legend>
+                        <!--for debe coincidir con id-->
+
+                        <div class="entrada">
+                              <label for="mail">E-mail</label>
+                              <input type="email" name="mail" id="mail" placeholder="Dirección de e-mail">
+                        </div>
+                        <div class="entrada">
+                              <label for="telefono">Teléfono</label>
+                              <input type="tel" name="telefono" id="telefono" placeholder="Número de teléfono">
+                        </div>
+                        <div class="entrada">
+                              <label for="pais">País</label>
+                              <select name="pais" id="pais">
+                                    <option value="AR">Argentina</option>
+                                    <option value="CO">Colombia</option>
+                                    <option value="PE">Perú</option>
+                                    <option value="UY">Uruguay</option>
+                                    <option value="VE">Venezuela</option>
+                              </select>
+                        </div>
+                        <div class="entrada">
+                              <label for="numero">Personas en su hogar</label>
+                              <input type="number" name="numero" id="numero">
+                        </div>
+                  </fieldset>
+                  <fieldset>
+                        <legend>Búsqueda</legend>
+                        <div class="entrada">
+                              <label for="busqueda">Buscar</label>
+                              <input type="search" id="busqueda" name="busqueda" placeholder="Qué quieres buscar">
+                        </div>
+                  </fieldset>
+                  <fieldset>
+                        <legend>Comentarios</legend>
+                        <div class="entrada">
+                              <label for="comentarios">Dejar mensaje</label>
+                              <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="En este espacio puede dejarnos sus comentarios"></textarea>
+                        </div>
+                  </fieldset>
+                  <fieldset>
+                        <legend>A llenar por la empresa</legend>
+                        <div class="entrada">
+                              <label for="concepto-jefe">Concepto del jefe</label>
+                              <input type="text" name="concepto-jefe" id="concepto-jefe" disabled>
+                        </div>
+                  </fieldset>
+
+                  <fieldset class="botones">
+                        
+                        <button type="reset">Limpiar todos los datos</button>
+                        <button type="submit">Enviar datos</button>
+                        
+                        <!-- Una etiqueta button puede contener imágenes -->
+                        <button name="favorito" type="button">
+                              <svg aria-hidden="true" viewBox="0 0 10 10"><path d="m7.4 8.8-2.4-1.3-2.4 1.3.46-2.7-2-1.9 2.7-.39 1.2-2.5 1.2 2.5 2.7.39-1.9 1.9z"/></svg>
+                              Agregar a favoritos
+                        </button>
+
+                        <button>Texto + imagen <img src="https://fastly.picsum.photos/id/322/100/100.jpg?hmac=8GQHgleuwg20yc2yJMRKB-B-46eksJIDIkjSBDlYPJM" alt=""></button>
+                        <button><img src="img/papel1.png" alt="" height="100" width="150"></button>
+                  </fieldset>
+
+                  <fieldset class="botones">
+                        <!-- En HTML5 la etiqueta button empezó a sustituir a input type="button" -->
+                        <input type="submit" value="Otra forma de enviar los datos">               
+                  </fieldset>
+            </form>
+      </div>
+      </main>
+
+
+
+
+      <footer>
+
+      </footer>
+</body>
+</html>

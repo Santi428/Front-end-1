@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: bisque;  
+}
+
+header{
+    font-style: normal;
+}
+
+.arriba{
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.idioma{
+    display: flex;
+}
+
+.idioma span{
+    padding-left: 10px;
+}
+
+.navegacion{
+    background-color: #F0A83E;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px;
+}
+
+.navbar{
+    padding-right: 20px;
+}
+
+.foto-comedero{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+#bienvenida{
+    font-size: 30px;
+    background-color: white;
+    padding-right: 22px;
+}
+
+.inicio-footer{
+    background-color: #F0A83E;
+}
+
+#boton-suscripcion{
+    background-color: #3C2313;
+    color: #FFFFFF;
+    border-radius: 15px;
+    width: 70px;
+    height: 34px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 11px;
+}

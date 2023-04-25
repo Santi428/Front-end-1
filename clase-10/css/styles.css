@@ -1,0 +1,37 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+.descuento{
+    background-color: #1CD1B0;
+}
+
+.heroes{
+    background-color: #00669F;
+}
+
+.foto-batman{
+    border-radius: 100%;
+}
+
+.carta-heroe{
+    border-color: black;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.botones{
+    background-color: #00669F;
+    color: #F3F3F3;
+    text-align: center;
+}
+
+footer{
+    background-color: #00669F;
+    font-size: 16px;
+    color: #FFF9F9;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
